@@ -13,7 +13,7 @@ const { title } = Astro.props;
   <head>
     <SEOMetadata
       siteName={"RFC 42069: nLa libre access-point"}
-      title={"Le cool title"}
+      title={title}
       description={"Request for comments 42069: nLa Libre Access-Point specification"}
       favicon={"/favicon.ico"}
       author="Lan Vukušič"
@@ -24,8 +24,6 @@ const { title } = Astro.props;
       astroGenerator={true}
     />
     <meta charset="UTF-8" />
-    <!-- <meta name="generator" content={Astro.generator} /> -->
-    <title>{title}</title>
   </head>
   <body>
     <slot />
